@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from './Card';
 import propTypes from 'prop-types'
 const Cards = props => {
-  console.log(props)
   return (
     <div className="cards-container">
     {props.cards.map((card,i)=> <Card card={card} key={i}/>)}
@@ -24,8 +23,4 @@ Cards.propTypes = {
     tab: propTypes.string,
   }))
 }
-// author: propTypes.string,
-// headline: propTypes.string,
-// img: propTypes.string,
-// tab: propTypes.string,
 
